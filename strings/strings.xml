@@ -1,0 +1,23 @@
+<root>
+	<string name="item_label_penalties">Penalties</string>
+
+	<string name="item_label_typemain">Main</string>
+	<string name="item_label_typeabilities">Abilities</string>
+	<string name="item_label_typehistory">History &#38; Rituals</string>
+
+	<string name="item_header_abilities">Item of Legacy - Cost &#38; Abilities</string>
+
+	<string name="item_label_abilities">Abilities</string>
+	<string name="item_label_level">Level</string>
+	<string name="record_label_itemfeature">Item Feature</string>
+	<string name="library_recordtype_empty_itemfeature">&#171; New Item Feature &#187;</string>
+	<string name="itemability_label_type">Type</string>
+	<string name="itemability_empty_type">Item Feature</string>
+
+	<string name="item_label_dc">DC</string>
+	<string name="item_label_normal">Normal</string>
+	<string name="item_label_least">Least</string>
+	<string name="item_label_lesser">Lesser</string>
+	<string name="item_label_greater">Greater</string>
+	<string name="item_label_history">History</string>
+</root>

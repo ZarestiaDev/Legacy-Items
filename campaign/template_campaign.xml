@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<root>
+    <template name="radio_record_itemtype">
+		<buttongroup_radio>
+			<anchored to="controlframe" height="20">
+				<top offset="8" />
+				<left anchor="center" offset="-150" />
+			</anchored>
+			<parameters>
+				<optionwidth>100</optionwidth>
+				<labelsres>item_label_typemain|item_label_typeabilities|item_label_typehistory</labelsres>
+				<values>Main|Abilities|History</values>
+			</parameters>
+			<script>
+				function onValueChanged()
+					window.typeChanged();
+				end
+			</script>
+		</buttongroup_radio>
+	</template>
+
+    <template name="label_cost">
+        <label>
+            <anchored to="leftanchor" position="righthigh" width="76">
+                <left anchor="right" relation="relative" offset="5" />
+            </anchored>
+            <center />
+            <invisible />
+        </label>
+    </template>
+
+    <template name="number_penalty">
+        <basicnumber>
+            <anchored to="leftanchor" position="righthigh" width="28" height="20" />
+            <invisible />
+            <hideonvalue>0</hideonvalue>
+            <gmeditonly />
+        </basicnumber>
+    </template>
+
+    <template name="label_hr">
+        <label_column>
+            <anchored>
+                <top offset="20" />
+            </anchored>
+        </label_column>
+    </template>
+
+    <template name="number_hr">
+        <number_columnh width="28">
+            <anchored>
+                <top offset="20" />
+            </anchored>
+            <invisible />
+            <gmeditonly />
+        </number_columnh>
+    </template>
+
+    <template name="labeltop_hr">
+        <label_fieldtop>
+            <static textres="item_label_dc" />
+        </label_fieldtop>
+    </template>
+
+    <template name="button_hr">
+        <buttonfield>
+            <anchored position="right" width="20" offset="10,0" />
+            <state icon="visibilityoff" />
+            <state icon="visibilityon" />
+            <gmvisibleonly />
+            <script>
+                function onValueChanged()
+                    local name = getName();
+                    name = name:gsub("visibility_", "")
+                    window.onVisibilityChanged(name);
+                end
+            </script>
+        </buttonfield>
+    </template>
+
+    <template name="ft_hr">
+        <ft_columnh>
+            <gmeditonly />
+        </ft_columnh>
+    </template>
+</root>

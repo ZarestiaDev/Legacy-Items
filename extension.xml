@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<root version="3.0">
+	<properties>
+		<name>Feature: Legacy Items</name>
+		<version>1.0</version>
+		<author>Zarestia</author>
+		<description>Implementation for Items of Legacy</description>
+		<ruleset>
+			<name>3.5E</name>
+		</ruleset>
+		<ruleset>
+			<name>PFRPG</name>
+		</ruleset>
+		<loadorder>50</loadorder>
+	</properties>
+
+	<announcement text="Legacy Items v1.0 by Zarestia" font="emotefont" />
+
+	<base>
+		<!-- Strings -->
+		<includefile source="strings/strings.xml" />
+
+		<!-- Campaign Records -->
+		<includefile source="campaign/record_item.xml" />
+		<includefile source="campaign/template_campaign.xml" />
+	</base>
+</root>
