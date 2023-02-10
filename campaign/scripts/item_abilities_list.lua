@@ -1,16 +1,16 @@
 function onInit()
     onPenaltyChanged();
-    DB.addHandler(DB.getPath(getDatabaseNode().getParent().getParent(), "penalties"), "onUpdate", onPenaltyChanged);
+    DB.addHandler(DB.getPath(DB.getChild(getDatabaseNode(), "..."), "penalties"), "onUpdate", onPenaltyChanged);
 end
 
 function onClose()
-    DB.removeHandler(DB.getPath(getDatabaseNode().getParent().getParent(), "penalties"), "onUpdate", onPenaltyChanged);
+    DB.removeHandler(DB.getPath(DB.getChild(getDatabaseNode(), "..."), "penalties"), "onUpdate", onPenaltyChanged);
 end
 
 function onPenaltyChanged()
     resetEntries();
 
-	local sPenalties = DB.getValue(getDatabaseNode().getParent().getParent(), "penalties", "");
+	local sPenalties = DB.getValue(DB.getChild(getDatabaseNode(), "..."), "penalties", "");
     if not sPenalties:match(",") and sPenalties ~= "" then
         penalty1.setVisible(true);
     end

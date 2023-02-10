@@ -3,10 +3,10 @@ function update()
         super.update();
     end
 
-	local sSubType = subtype.getValue():lower();
+	local nodeRecord = getDatabaseNode();
+	local sSubType = DB.getValue(nodeRecord, "subtype"):lower();
 	local bLegacy = sSubType:match("legacy");
 
-	local nodeRecord = getDatabaseNode();
 	local bReadOnly = WindowManager.getReadOnlyState(nodeRecord);
 	local bID = LibraryData.getIDState("item", nodeRecord);
 
