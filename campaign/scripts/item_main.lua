@@ -10,7 +10,7 @@ function update()
 	local bReadOnly = WindowManager.getReadOnlyState(nodeRecord);
 	local bID = LibraryData.getIDState("item", nodeRecord);
 
-	updateControl("penalties", bReadOnly, bID and bLegacy);
+	WindowManager.callSafeControlUpdate(self, "penalties", bReadOnly, not (bID and bLegacy));
 	parentcontrol.window.controlframe.setVisible(bLegacy);
 	parentcontrol.window.itemtype.setVisible(bLegacy);
 end
