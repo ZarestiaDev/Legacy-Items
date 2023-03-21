@@ -11,13 +11,6 @@
 				<class>item_history</class>
 			</subwindow_record>
 
-			<scrollbar_record>
-				<target>abilities</target>
-			</scrollbar_record>
-			<scrollbar_record>
-				<target>histroy</target>
-			</scrollbar_record>
-
 			<frame_record_lower name="controlframe" />
 			<radio_record_itemtype name="itemtype" />
 		</sheetdata>
