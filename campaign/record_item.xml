@@ -4,14 +4,16 @@
 	<windowclass name="item" merge="join">
 		<script file="campaign/scripts/item.lua" />
 		<sheetdata>
-			<subwindow_record name="abilities">
+			<sub_content_framed_groupbox name="abilities">
 				<class>item_abilities</class>
-			</subwindow_record>
-			<subwindow_record name="history">
+			</sub_content_framed_groupbox>
+			<sub_content_framed_groupbox name="history">
 				<class>item_history</class>
-			</subwindow_record>
+			</sub_content_framed_groupbox>
 
-			<frame_record_lower name="controlframe" />
+			<area_content_framed_groupbox_bottom name="controlframe">
+				<anchored height="20" />
+			</area_content_framed_groupbox_bottom>
 			<radio_record_itemtype name="itemtype" />
 		</sheetdata>
 	</windowclass>
