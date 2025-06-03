@@ -1,20 +1,36 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 
 <root>
-	<windowclass name="item" merge="join">
-		<script file="campaign/scripts/item.lua" />
+	<windowclass name="item" copy="record_window_tabbed" >
+		<minimize>minimized_item</minimize>
+		<tab>
+			<name>main</name>
+			<resource>tab_main</resource>
+			<class>item_main</class>
+			<embed />
+		</tab>
+		<tab merge="add">
+			<name>pictures</name>
+			<resource>tab_pictures</resource>
+			<class>record_content_pictures</class>
+			<embed />
+		</tab>
+		<tab merge="add">
+			<name>abilities</name>
+			<resource>tab_abilities</resource>
+			<class>item_abilities</class>
+			<embed />
+		</tab>
+		<tab merge="add">
+			<name>history</name>
+			<resource>tab_history</resource>
+			<class>item_history</class>
+			<embed />
+		</tab>
 		<sheetdata>
-			<sub_content_framed_groupbox name="abilities">
-				<class>item_abilities</class>
-			</sub_content_framed_groupbox>
-			<sub_content_framed_groupbox name="history">
-				<class>item_history</class>
-			</sub_content_framed_groupbox>
-
-			<area_content_framed_groupbox_bottom name="controlframe">
-				<anchored height="20" />
-			</area_content_framed_groupbox_bottom>
-			<radio_record_itemtype name="itemtype" />
+			<sub_content_framed_groupbox_top name="header">
+				<class>item_header</class>
+			</sub_content_framed_groupbox_top>
 		</sheetdata>
 	</windowclass>
 
@@ -32,12 +48,14 @@
 				</script>
 			</string_columnh>
 
-			<label_column name="penalties_label" insertafter="description">
+			<label_content_column name="penalties_label" insertafter="description">
 				<static textres="item_label_penalties" />
-			</label_column>
-			<string_columnh name="penalties" insertafter="description">
+				<invisible />
+			</label_content_column>
+			<string_content_columnh name="penalties" insertafter="description">
 				<gmeditonly />
-			</string_columnh>
+				<invisible />
+			</string_content_columnh>
 		</sheetdata>
 	</windowclass>
 

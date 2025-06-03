@@ -1,24 +1,6 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 
 <root>
-    <template name="radio_record_itemtype">
-		<buttongroup_radio>
-			<anchored to="controlframe" height="20">
-				<top offset="8" />
-				<left anchor="center" offset="-150" />
-			</anchored>
-			<parameters>
-				<optionwidth>100</optionwidth>
-				<labelsres>item_label_typemain|item_label_typeabilities|item_label_typehistory</labelsres>
-				<values>Main|Abilities|History</values>
-			</parameters>
-			<script>
-				function onValueChanged()
-					window.typeChanged();
-				end
-			</script>
-		</buttongroup_radio>
-	</template>
 
     <template name="label_cost">
         <label>
