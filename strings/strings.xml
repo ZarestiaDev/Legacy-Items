@@ -1,9 +1,8 @@
 <root>
 	<string name="item_label_penalties">Penalties</string>
 
-	<string name="item_label_typemain">Main</string>
-	<string name="item_label_typeabilities">Abilities</string>
-	<string name="item_label_typehistory">History &#38; Rituals</string>
+	<string name="tab_abilities">Abilities</string>
+	<string name="tab_history">History</string>
 
 	<string name="item_header_abilities">Item of Legacy - Cost &#38; Abilities</string>
 
