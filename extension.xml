@@ -3,7 +3,7 @@
 <root version="3.0">
 	<properties>
 		<name>Feature: Legacy Items</name>
-		<version>1.4</version>
+		<version>1.5</version>
 		<author>Zarestia</author>
 		<description>Implementation for Items of Legacy</description>
 		<ruleset>
@@ -15,7 +15,7 @@
 		<loadorder>50</loadorder>
 	</properties>
 
-	<announcement text="Legacy Items v1.4 by Zarestia" font="emotefont" />
+	<announcement text="Legacy Items v1.5 by Zarestia" font="emotefont" />
 
 	<base>
 		<!-- Strings -->

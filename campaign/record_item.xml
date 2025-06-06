@@ -224,7 +224,7 @@
 		</script>
 		<sheetdata>
 			<anchor_content_top />
-			<ft_content_columnh_full name="summary" />
+			<ft_content_columnh_full name="text" />
 		</sheetdata>
 	</windowclass>
 
